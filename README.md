@@ -1,10 +1,10 @@
-# 🌿 EcoGestor — Sistema de Gestión de Reciclaje Comunitario
+# EcoGestor — Sistema de Gestión de Reciclaje Comunitario
 
 > Proyecto académico desarrollado en Python para la gestión organizada de actividades de reciclaje en comunidades, conjuntos residenciales e instituciones educativas.
 
 ---
 
-## 📋 Tabla de contenidos
+## Tabla de contenidos
 
 1. [Descripción general](#descripción-general)
 2. [Planteamiento del problema](#planteamiento-del-problema)
@@ -20,13 +20,13 @@
 
 ---
 
-## 📖 Descripción general
+## Descripción general
 
 **EcoGestor** es una aplicación de escritorio desarrollada completamente en **Python**, orientada a comunidades o instituciones que deseen digitalizar y organizar sus procesos de reciclaje. El sistema permite registrar usuarios, clasificar materiales, gestionar entregas, acumular puntos por participación y generar reportes de impacto ambiental.
 
 ---
 
-## ❗ Planteamiento del problema
+## Planteamiento del problema
 
 En muchas comunidades existen iniciativas de reciclaje que se gestionan de forma manual e informal: cuadernos, hojas de cálculo o mensajes de texto. Esta falta de organización genera:
 
@@ -47,7 +47,7 @@ EcoGestor centraliza y digitaliza el proceso de reciclaje comunitario mediante u
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Objetivo general
 
@@ -66,9 +66,9 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 🔍 Alcance del proyecto
+## Alcance del proyecto
 
-### ✅ Incluye
+### Incluye
 
 - Registro de usuarios.
 - Registro de materiales reciclables.
@@ -79,7 +79,7 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 - Interfaz gráfica en Python.
 - Backend en Python con organización modular.
 
-### ❌ No incluye (primera versión)
+### No incluye (primera versión)
 
 - Aplicación móvil.
 - Autenticación avanzada con roles complejos.
@@ -91,7 +91,7 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Backend
 | Elemento | Descripción |
@@ -109,49 +109,10 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
-```text
-ecogestor/
-├── backend/                  # Lógica de negocio y manejo de datos
-│   ├── models/               # Clases de dominio (User, Material, etc.)
-│   ├── dtos/                 # Objetos para transferencia de datos
-│   ├── services/             # Lógica de negocio principal
-│   ├── repositories/         # Acceso y persistencia de datos
-│   ├── data_structures/      # Estructuras propias (Stack, Queue, etc.)
-│   ├── validators/           # Validaciones de las entidades
-│   ├── storage/              # Configuración local de persistencia
-│   └── exceptions/           # Excepciones personalizadas
-├── frontend/                 # Interfaz gráfica de usuario
-│   ├── views/                # Pantallas del sistema
-│   ├── controllers/          # Conectores entre vista y servicios
-│   ├── components/           # Componentes visuales reutilizables
-│   ├── styles/               # Configuración visual (temas y constantes)
-│   └── assets/               # Recursos estáticos
-├── docs/                     # Documentación de arquitectura y requerimientos
-├── tests/                    # Pruebas automatizadas futuras
-├── data/                     # Carpeta para archivos de base de datos local
-├── README.md                 # Documentación general
-├── requirements.txt          # Dependencias del proyecto
-└── .gitignore                # Reglas para Git
-```
 
-## Arquitectura inicial del sistema
-
-- El proyecto está dividido en frontend y backend.
-- El backend contiene modelos, DTOs, servicios, repositorios, validadores, estructuras de datos y persistencia.
-- El frontend contiene vistas, controladores, componentes, estilos y recursos.
-- La comunicación esperada será:
-  **Frontend → Controllers → Services → Repositories → Storage**
-- Las estructuras de datos estarán centralizadas en `backend/data_structures`.
-- La interfaz estará en español.
-- El código interno estará en inglés.
-
-## ⚙️ Instalación y ejecución
-
-### 2. Crear y activar un entorno virtual
-
-### 4. Ejecutar la aplicación
+---
 
 ## ✨ Funcionalidades principales
 
@@ -165,31 +126,6 @@ ecogestor/
 
 ---
 
-## 👥 Equipo de desarrollo
-
-<!-- ⚠️ SECCIÓN PENDIENTE — completar por el otro integrante del equipo -->
-<!-- 
-    Por favor completa esta sección con:
-    - Nombre completo de cada integrante
-    - Rol en el proyecto (ej: backend, frontend, diseño, documentación)
-    - Información de contacto o perfil de GitHub (opcional)
-
-    Ejemplo de formato sugerido:
-
-| Nombre | Rol | GitHub |
-|---|---|---|
-| Ana López | Backend & Base de datos | @analopez |
-| Carlos Ruiz | Frontend & UI | @carlosruiz |
-
--->
-
----
-
-## 📌 Estado del proyecto
-
-```
-🟡 En desarrollo — Primera versión funcional (v1.0)
-```
 
 | Módulo | Estado |
 |---|---|
@@ -201,5 +137,40 @@ ecogestor/
 | Pruebas | 🔲 Pendiente |
 
 ---
+### Requerimientos Funcionales
+
+| ID | Funcionalidad | Descripción |
+| :--- | :--- | :--- |
+| **RF-01** | Gestión de Usuarios | El sistema debe permitir registrar, consultar, actualizar y dar de baja a los participantes de la comunidad (nombre, documento de identidad, dirección/apartamento). |
+| **RF-02** | Gestión de Materiales | El sistema debe permitir registrar los tipos de materiales aceptados (plástico, cartón, vidrio, etc.) y asignarles un factor de conversión o valor en puntos por kilogramo/unidad. |
+| **RF-03** | Registro de Entregas | El sistema debe permitir registrar cada vez que un usuario entrega material reciclable, capturando la fecha, el tipo de material, la cantidad y asociándolo al usuario correspondiente. |
+| **RF-04** | Cálculo de Puntos | El sistema debe calcular automáticamente los puntos generados en cada entrega y sumarlos al saldo total del usuario. |
+| **RF-05** | Gestión de Solicitudes | El sistema debe permitir a los usuarios registrar solicitudes de recolección a domicilio, y a los administradores visualizar, aceptar y marcar estas solicitudes como "completadas" o "canceladas". |
+| **RF-06** | Generación de Reportes | El sistema debe generar reportes que muestren métricas como el total reciclado, el top de usuarios con más puntos y el historial de entregas. |
+
+---
+
+### Requerimientos No Funcionales
+
+| ID | Atributo | Descripción |
+| :--- | :--- | :--- |
+| **RNF-01** | Interfaz de Usuario | La aplicación debe contar con una interfaz gráfica de escritorio (GUI) desarrollada en PySide6, asegurando una experiencia visual moderna e interactiva. |
+| **RNF-02** | Arquitectura del Sistema | El código debe estar organizado bajo un patrón de diseño que separe responsabilidades (ej. Capas o MVC), utilizando objetos de transferencia de datos (DTOs). |
+| **RNF-03** | Persistencia de Datos | Almacenamiento local mediante bases de datos embebidas (SQLite) o archivos estructurados (JSON/CSV) para garantizar la permanencia de los datos. |
+| **RNF-04** | Usabilidad y Lenguaje | Interfaz gráfica completamente en idioma español, con un diseño intuitivo para minimizar la curva de aprendizaje. |
+| **RNF-05** | Rendimiento | El sistema debe ser capaz de procesar y recuperar la información en tiempo real, operando eficientemente con las estructuras de datos en memoria. |
+
+---
+
+### Estructuras de Datos Aplicadas
+
+| Estructura de Datos | Aplicación en el Caso de Estudio | Justificación (Lógica) |
+| :--- | :--- | :--- |
+| **Arreglos (Arrays)** | Catálogo de materiales reciclables. | Almacenamiento de datos estáticos y de acceso rápido por índice. |
+| **Pilas (Stacks)** | Función de "Deshacer última acción". | Implementa **LIFO** (*Last In, First Out*) para revertir el último registro en caso de error. |
+| **Colas (Queues)** | Solicitudes de recolección. | Implementa **FIFO** (*First In, First Out*) para atender los pedidos en orden de llegada. |
+| **Listas Simples** | Directorio de usuarios registrados. | Estructura dinámica que permite insertar y recorrer todos los participantes sin un tamaño fijo. |
+| **Listas Dobles** | Historial de entregas por usuario. | Permite la navegación bidireccional para consultar registros anteriores y posteriores fácilmente. |
+| **Listas Circulares Dobles** | Carrusel de estadísticas en Dashboard. | Permite una navegación infinita en la interfaz gráfica para mostrar reportes y rankings. |
 
 > *EcoGestor — Transformando el reciclaje comunitario en un proceso digital, ordenado y medible.* 🌱
