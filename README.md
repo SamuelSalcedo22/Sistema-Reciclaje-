@@ -1,10 +1,10 @@
-# 🌿 EcoGestor — Sistema de Gestión de Reciclaje Comunitario
+# EcoGestor — Sistema de Gestión de Reciclaje Comunitario
 
 > Proyecto académico desarrollado en Python para la gestión organizada de actividades de reciclaje en comunidades, conjuntos residenciales e instituciones educativas.
 
 ---
 
-## 📋 Tabla de contenidos
+## Tabla de contenidos
 
 1. [Descripción general](#descripción-general)
 2. [Planteamiento del problema](#planteamiento-del-problema)
@@ -20,13 +20,13 @@
 
 ---
 
-## 📖 Descripción general
+## Descripción general
 
 **EcoGestor** es una aplicación de escritorio desarrollada completamente en **Python**, orientada a comunidades o instituciones que deseen digitalizar y organizar sus procesos de reciclaje. El sistema permite registrar usuarios, clasificar materiales, gestionar entregas, acumular puntos por participación y generar reportes de impacto ambiental.
 
 ---
 
-## ❗ Planteamiento del problema
+## Planteamiento del problema
 
 En muchas comunidades existen iniciativas de reciclaje que se gestionan de forma manual e informal: cuadernos, hojas de cálculo o mensajes de texto. Esta falta de organización genera:
 
@@ -47,7 +47,7 @@ EcoGestor centraliza y digitaliza el proceso de reciclaje comunitario mediante u
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Objetivo general
 
@@ -66,9 +66,9 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 🔍 Alcance del proyecto
+## Alcance del proyecto
 
-### ✅ Incluye
+### Incluye
 
 - Registro de usuarios.
 - Registro de materiales reciclables.
@@ -79,7 +79,7 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 - Interfaz gráfica en Python.
 - Backend en Python con organización modular.
 
-### ❌ No incluye (primera versión)
+### No incluye (primera versión)
 
 - Aplicación móvil.
 - Autenticación avanzada con roles complejos.
@@ -91,7 +91,7 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Backend
 | Elemento | Descripción |
@@ -109,7 +109,7 @@ Desarrollar un sistema de gestión de reciclaje comunitario utilizando únicamen
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 ecogestor/
@@ -136,7 +136,7 @@ ecogestor/
 
 ---
 
-## ⚙️ Instalación y ejecución
+## Instalación y ejecución
 
 > **Requisitos previos:** Python 3.10 o superior instalado en el sistema.
 
