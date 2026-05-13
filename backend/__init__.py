@@ -1,0 +1,3 @@
+"""
+Paquete principal del backend.
+"""
